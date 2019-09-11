@@ -4,9 +4,9 @@ import imc
 
 
 def escolhe_jogo():
-    print("*********************************")
-    print("********** APLICATIVOS **********")
-    print("*********************************")
+    print("**********************************************************")
+    print("********** APLICATIVOS DESENVOLVIDOS COM PYTHON **********")
+    print("**********************************************************")
 
     print(" (1) Jogo da Forca (2) Jogo da Adivinhação (3) Calculadora IMC")
 
