@@ -5,11 +5,15 @@ def jogar():
     print("***Bem vindo ao jogo da forca!***")
     print("*********************************")
 
-    banco_de_palavras = ("banana", "bergamota", "melancia", "maça", "laranja", "abacate", "limao", "jaca", "uva", "tangerina", "mamao")
+    banco_de_palavras = open("banco_de_palavras.txt", "r")
+    palavras = []
+    for linha in banco_de_palavras:
+        linha = linha.strip()
+        palavras.append(linha)
+    banco_de_palavras.close()
 
-    sorteio = random.choice(banco_de_palavras)
 
-    palavra_secreta = sorteio.upper()
+    palavra_secreta = random.choice(palavras).upper()
     letras_acertadas = ["_" for letra in palavra_secreta]
 
 
